@@ -9,6 +9,7 @@ public class HsApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(HsApplication.class, args);
+        System.out.println();
     }
 
 }
