@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Mon Feb 24 13:11:34 CST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0170-759b-8f83-00000a7f6518 
-on database directory memory:E:\ideaProjects\community\testdb  with class loader sun.misc.Launcher$ExtClassLoader@5c0369c4 
+Fri Mar 20 14:51:30 CST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0170-f6b6-0b5f-00000cb20c60 
+on database directory memory:E:\ideaProjects\community\testdb  with class loader sun.misc.Launcher$ExtClassLoader@6d6f6e28 
 Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_181/jre/lib/ext/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_181-b13
