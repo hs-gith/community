@@ -26,7 +26,7 @@
     </ul>
     <ul class="layui-nav fly-nav-user">
       <li class="layui-nav-item"> <a class="iconfont icon-touxiang layui-hide-xs" href="/user/login/"></a> </li>
-      <li class="layui-nav-item"> <a href="/user/login/">登入</a> </li>
+      <li class="layui-nav-item"> <a href="/user/login">登入</a> </li>
       <li class="layui-nav-item"> <a href="/user/reg/">注册</a> </li>
       <li class="layui-nav-item layui-hide-xs"> <a href="/app/qq/" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})" title="QQ登入" class="iconfont icon-qq"></a> </li>
       <li class="layui-nav-item layui-hide-xs"> <a href="/app/weibo/" onclick="layer.msg('正在通过微博登入', {icon:16, shade: 0.1, time:0})" title="微博登入" class="iconfont icon-weibo"></a> </li>
@@ -42,16 +42,15 @@
       </ul>
       <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">
         <div class="layui-tab-item layui-show">
-          <div class="layui-btn-container" style="margin: 10px 0;"> <a href="javascript:;" class="layui-btn layui-btn-sm">通过密保问题找回</a> <a href="forgetByPone.html" class="layui-btn layui-btn-sm layui-btn-primary">通过手机找回</a> </div>
+          <div class="layui-btn-container" style="margin: 10px 0;"> <a href="forget.html" class="layui-btn layui-btn-sm layui-btn-primary">通过密保问题找回</a> <a href="javascript:;" class="layui-btn layui-btn-sm">通过手机找回</a> </div>
           <div class="layui-form layui-form-pane">
             <form method="post">
-              <div>
-                <label><font style="color: red;">你的家乡？or 你的大学名字？</font></label>
+              <div class="layui-form-item"> <label for="L_phone" class="layui-form-label">手机</label>
+                <div class="layui-input-inline"> <input type="text" id="L_phone" name="phone" required lay-verify="phone" autocomplete="off" class="layui-input"> </div>
               </div>
-
-              <div class="layui-form-item input-item" style=" width: 260px;height: 38px;">
-                <input type="text" name="answer" placeholder="密保答案"
-                       id="answer" maxlength="11" class="layui-input">
+              <div class="layui-form-item"> <label for="L_vercode" class="layui-form-label">验证码</label>
+                <div class="layui-input-inline"> <input type="text" id="L_vercode" name="vercode" required lay-verify="required" placeholder="请输入手机验证码" autocomplete="off" class="layui-input"> </div>
+                <div class="layui-form-mid" style="padding: 0!important;"> <button type="button" class="layui-btn layui-btn-normal" id="FLY-getvercode">获取验证码</button> </div>
               </div>
               <div class="layui-form-item"> <button class="layui-btn" alert="1" lay-filter="*" lay-submit>提交</button> </div>
             </form>
@@ -69,32 +68,7 @@
     <p> <a href="https://console.upyun.com/register/?invite=SJ0wu6g2-" target="_blank" rel="nofollow" sponsor="upyun"> <img src="//res.layui.com/static/images/other/upyun.png?t=1"> </a> <a href="https://www.maoyuncloud.com/?from=layui" target="_blank" rel="nofollow" sponsor="maoyun"> <img src="//cdn.layui.com/upload/2019_5/168_1559291577683_9348.png"> </a>
   </div>
 </div>
-<script src="//res.layui.com/layui/dist/layui.js?t=1586047002961"></script>
-<script>
-    layui.cache.page = '';
-    layui.cache.user = {
-        username: '游客',
-        uid: -1,
-        avatar: '//res.layui.com/static/images/fly/avatar/default.png',
-        experience: 0,
-        sum: 0,
-        vip: 0,
-        sex: ''
-    };
-    layui.config({
-        version: "1586047002961"
-    }).extend({
-        'fly': '//res.layui.com/static/lay/modules/fly/index'
-    }).use('fly');
-</script>
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+
+</body>
 </body>
 </html>
