@@ -10,19 +10,12 @@ import lombok.EqualsAndHashCode;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotBlank;
+
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
 
 import static com.hs.config.Trimmed.TrimmerType.ALL_WHITESPACES;
 
 
-/**
- * <p>
- * 用户表
- * </p>
- *
- */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @ApiModel
@@ -56,6 +49,11 @@ public class User extends BaseEntity {
 
     @ApiModelProperty("头像图片")
     private String headImg;
+
+    @ApiModelProperty("修改时间")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private LocalDate updateTime;
 
 
 }

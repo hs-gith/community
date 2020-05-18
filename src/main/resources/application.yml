@@ -19,7 +19,7 @@ spring:
 
   # redis相关配置
   redis:
-    database: 10
+    database: 15
     host: 118.31.167.123  # redis服务器地址
     password: reformer      # redis密码
     port: 7000          # redis连接端口
